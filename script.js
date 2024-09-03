@@ -2,7 +2,8 @@ const path = require("path");
 const Max = require("max-api");
 const io = require("socket.io-client");
 // cambiare per collegarsi
-const ioClient = io.connect("ws://localhost:5173");
+const ioClient = io.connect("http://192.168.8.102:5173");
+//const ioClient = io.connect("ws://localhost:5173");
 
 ioClient.on("seq-num", (msg) => {
   Max.outlet(msg);

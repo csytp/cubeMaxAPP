@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 66.0, 113.0, 342.0, 379.0 ],
+		"rect" : [ 66.0, 113.0, 454.0, 379.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 214.0, 234.0, 97.0, 22.0 ],
+					"text" : "chgScn 1*debug"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.745979309082031, 200.0, 97.0, 22.0 ],
-					"text" : "chgScn 1*debug"
+					"patching_rect" : [ 198.745979309082031, 200.0, 159.0, 22.0 ],
+					"text" : "toDevice 1*chgScn*1*debug"
 				}
 
 			}
@@ -219,7 +231,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 94.0, 275.0, 50.0, 22.0 ],
-													"text" : "1 0 1"
+													"text" : "3 0 0"
 												}
 
 											}
@@ -243,7 +255,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 388.0, 217.0, 50.0, 22.0 ],
-													"text" : "1"
+													"text" : "3"
 												}
 
 											}
@@ -2301,7 +2313,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 33.0, 182.0, 1485.0, 828.0 ],
+						"rect" : [ 721.0, 370.0, 1485.0, 828.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2329,6 +2341,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-30",
@@ -5379,7 +5392,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 28.5, 279.0, 146.0, 22.0 ],
-					"text" : "\"Client connected 2\""
+					"text" : "\"Client gone 4\""
 				}
 
 			}
@@ -5452,6 +5465,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -5480,6 +5495,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
