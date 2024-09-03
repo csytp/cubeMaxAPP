@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.745979309082031, 200.0, 59.0, 22.0 ],
-					"text" : "chgScn 1"
+					"patching_rect" : [ 198.745979309082031, 200.0, 97.0, 22.0 ],
+					"text" : "chgScn 1*debug"
 				}
 
 			}
@@ -5452,8 +5452,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
