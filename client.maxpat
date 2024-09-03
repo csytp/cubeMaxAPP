@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 198.745979309082031, 200.0, 59.0, 22.0 ],
+					"text" : "chgScn 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-73",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -49,7 +61,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -95,7 +107,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 6,
-											"revision" : 2,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -556,7 +568,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -782,7 +794,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 6,
-											"revision" : 2,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1033,7 +1045,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 6,
-											"revision" : 2,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1850,7 +1862,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2283,7 +2295,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2325,7 +2337,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1178.0, 535.0, 215.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 1*saw2*480*20*-Infinity*1000"
 								}
 
@@ -2338,7 +2349,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 960.0, 535.0, 194.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 1*saw2*480*20*-24*1000"
 								}
 
@@ -2375,7 +2385,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1178.0, 670.0, 215.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 5*saw2*880*20*-Infinity*1000"
 								}
 
@@ -2388,7 +2397,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1178.0, 637.0, 215.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 4*saw2*480*20*-Infinity*1000"
 								}
 
@@ -2401,7 +2409,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1178.0, 603.0, 215.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 3*saw2*880*20*-Infinity*1000"
 								}
 
@@ -2414,7 +2421,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1178.0, 569.0, 215.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 2*saw2*480*20*-Infinity*1000"
 								}
 
@@ -2427,7 +2433,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 960.0, 669.0, 201.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 5*saw2*1000*20*-24*1000"
 								}
 
@@ -2440,7 +2445,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 960.0, 635.0, 194.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 4*saw2*600*20*-24*1000"
 								}
 
@@ -2453,7 +2457,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 960.0, 602.0, 194.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 3*saw2*880*20*-24*1000"
 								}
 
@@ -2466,7 +2469,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 960.0, 568.0, 194.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "toDevice 2*saw2*480*20*-24*1000"
 								}
 
@@ -3347,7 +3349,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 6,
-											"revision" : 2,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5450,6 +5452,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -5512,6 +5516,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -5519,7 +5530,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "script.js",
-				"bootpath" : "~/Desktop/SISTEMI3/ESEMPI/MAXSOCKETTONE/CLIENT",
+				"bootpath" : "D:/ProgettiCoding/cubeMaxAPP",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

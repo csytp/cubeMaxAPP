@@ -61,3 +61,8 @@ Max.addHandler("strobe", (mess) => {
 Max.addHandler("metro", (mess) => {
   ioClient.emit("metro", mess);
 });
+
+
+Max.addHandler("chgScn", (mess) => {
+  ioClient.emit("chgScn", mess);
+});
