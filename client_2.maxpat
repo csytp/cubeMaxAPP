@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1171.0, 497.0, 736.0, 379.0 ],
+		"rect" : [ 48.0, 79.0, 972.0, 719.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,63 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-3",
+					"id" : "obj-10",
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 195.0, 111.0, 22.0 ],
-					"text" : "csound 2*-40*1000"
+					"patching_rect" : [ 731.0, 130.0, 52.0, 76.0 ],
+					"text" : "to_client/ chgScn 1*debug"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 692.0, 70.0, 97.0, 22.0 ],
+					"text" : "udpreceive 9998"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 541.0, 168.0, 87.0, 22.0 ],
+					"text" : "route to_client/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 334.0, 140.0, 144.0, 35.0 ],
+					"text" : "to_client/ sine 622.27*327.*-Infinity*0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 459.0, 70.0, 97.0, 22.0 ],
+					"text" : "udpreceive 9999"
 				}
 
 			}
@@ -68,7 +118,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1213.0, 496.0, 640.0, 480.0 ],
+						"rect" : [ 69.0, 97.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -188,7 +238,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 106.0, 159.0, 22.0 ],
-									"text" : "toDevice 3*chgScn*2*debug"
+									"text" : "toDevice 5*chgScn*2*debug"
 								}
 
 							}
@@ -286,7 +336,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1503.0, 112.0, 354.0, 410.0 ],
+						"rect" : [ 134.0, 157.0, 354.0, 410.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -438,7 +488,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 94.0, 275.0, 50.0, 22.0 ],
-													"text" : "1 0 0"
+													"text" : "1 0 1"
 												}
 
 											}
@@ -1774,7 +1824,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 43.0, 142.0, 130.0, 22.0 ],
-									"text" : "strobe 255*255*255*-1"
+									"text" : "strobe 255*0*0*-1"
 								}
 
 							}
@@ -1807,8 +1857,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 59.0, 152.0, 22.0 ],
-									"text" : "initRGB 255*0*255*1*2000"
+									"patching_rect" : [ 27.0, 59.0, 165.0, 22.0 ],
+									"text" : "initRGB 5*120*255*1*2"
 								}
 
 							}
@@ -2087,7 +2137,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 647.0, 564.0, 715.0, 459.0 ],
+						"rect" : [ 139.0, 168.0, 715.0, 459.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2117,13 +2167,26 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 435.0, 369.0, 137.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"text" : "audioPlayer 1*-Infinity*0"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 153.0, 271.0, 137.0, 22.0 ],
-									"text" : "audioPlayer 2*-Infinity*0"
+									"patching_rect" : [ 435.0, 288.0, 137.0, 22.0 ],
+									"text" : "audioPlayer 10*0*0"
 								}
 
 							}
@@ -2310,8 +2373,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 271.0, 115.0, 22.0 ],
-									"text" : "audioPlayer 2*-18*0"
+									"patching_rect" : [ 435.0, 328.0, 115.0, 22.0 ],
+									"text" : "audioPlayer 1*0*0"
 								}
 
 							}
@@ -2376,6 +2439,13 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"source" : [ "obj-14", 0 ]
@@ -2520,7 +2590,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 154.0, 182.0, 1485.0, 828.0 ],
+						"rect" : [ 34.0, 79.0, 1372.0, 719.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5598,7 +5668,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 28.5, 279.0, 146.0, 22.0 ],
-					"text" : "\"Client gone 2\""
+					"text" : "\"Client connected 2\""
 				}
 
 			}
@@ -5671,6 +5741,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -5711,6 +5783,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -5718,7 +5806,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-10", 1 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -5747,6 +5844,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -5754,7 +5858,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "script.js",
-				"bootpath" : "D:/ProgettiCoding/cubeMaxAPP",
+				"bootpath" : "~/Desktop/VIENNA/controllerMax",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
