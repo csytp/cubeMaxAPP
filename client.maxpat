@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1171.0, 497.0, 736.0, 379.0 ],
+		"rect" : [ 845.0, 303.0, 633.0, 379.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,37 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 432.0, 161.0, 140.0, 22.0 ],
+					"text" : "csound 1*2*-30*440*200"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 472.0, 236.0, 144.0, 22.0 ],
+					"text" : "csound -1*2*-30*440*200"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 195.0, 111.0, 22.0 ],
-					"text" : "csound 2*-40*1000"
+					"patching_rect" : [ 442.0, 195.0, 144.0, 22.0 ],
+					"text" : "csound 1*-1*-30*440*200"
 				}
 
 			}
@@ -438,7 +462,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 94.0, 275.0, 50.0, 22.0 ],
-													"text" : "1 0 0"
+													"text" : "2 0 0"
 												}
 
 											}
@@ -462,7 +486,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 388.0, 217.0, 50.0, 22.0 ],
-													"text" : "1"
+													"text" : "2"
 												}
 
 											}
@@ -752,7 +776,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 237.245979000000005, 290.0, 83.0, 22.0 ],
+					"patching_rect" : [ 327.0, 256.0, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -5598,7 +5622,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 28.5, 279.0, 146.0, 22.0 ],
-					"text" : "\"Client gone 2\""
+					"text" : "\"Client gone 3\""
 				}
 
 			}
@@ -5712,6 +5736,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -5747,6 +5778,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -5754,7 +5792,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "script.js",
-				"bootpath" : "D:/ProgettiCoding/cubeMaxAPP",
+				"bootpath" : "E:/GitHub/cubeMaxAPP",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
