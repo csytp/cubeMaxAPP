@@ -71,3 +71,7 @@ Max.addHandler("chgScn", (mess) => {
 Max.addHandler("csound", (mess) => {
   ioClient.emit("csound", mess);
 });
+
+Max.addHandler("showFr", (mess) => {
+  ioClient.emit("showFr", mess);
+});
