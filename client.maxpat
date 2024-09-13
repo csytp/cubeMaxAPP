@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 845.0, 303.0, 633.0, 379.0 ],
+		"rect" : [ 34.0, 79.0, 1152.0, 719.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,176 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-21",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 601.0, 223.0, 50.0, 49.0 ],
+					"text" : "chgScn 2*debug"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 5,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 576.0, 79.0, 52.0, 76.0 ],
+					"text" : "to_client/ chgScn 1*debug"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 541.0, 46.0, 97.0, 22.0 ],
+					"text" : "udpreceive 9998"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 541.0, 168.0, 87.0, 22.0 ],
+					"text" : "route to_client/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 377.5, 46.0, 97.0, 22.0 ],
+					"text" : "udpreceive 9999"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 580.0, 366.0, 162.0, 22.0 ],
+					"text" : "csound -2*2*-30*1000*200*2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 398.0, 319.0, 162.0, 22.0 ],
+					"text" : "csound 2*-1*-30*1000*200*2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 626.0, 304.0, 150.0, 20.0 ],
+					"text" : "off"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 476.0, 241.0, 150.0, 20.0 ],
+					"text" : "on"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 876.0, 262.0, 150.0, 20.0 ],
+					"text" : "elimina evento"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 688.0, 255.0, 150.0, 20.0 ],
+					"text" : "csound -1*......"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 876.0, 240.0, 150.0, 20.0 ],
+					"text" : "durata infinita"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 688.0, 239.0, 150.0, 20.0 ],
+					"text" : "csound 1*-1*....."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 10,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 688.0, 79.0, 439.0, 154.0 ],
+					"text" : "sintassi comandi csound\ncsound 1 n. strumento (se con \"-\" = elimina strumento es. -1),durata (se -1 = infinito), ampiezza, frequenza, detune (+- il valore freq.), rampa (secondi)\n\n\ncsound 2 strumento,durata, ampiezza, frequenza, detune, rampa\ncsound 3 strumento,durata, ampiezza, frequenza, detune, rampa\ncsound 4 strumento,durata, ampiezza, frequenza, detune, rampa\ncsound 5 strumento,durata, ampiezza\ncsound 6 strumento,durata, ampiezza\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 432.0, 161.0, 140.0, 22.0 ],
+					"patching_rect" : [ 356.0, 195.0, 140.0, 22.0 ],
 					"text" : "csound 1*2*-30*440*200"
 				}
 
@@ -57,8 +221,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.0, 236.0, 144.0, 22.0 ],
-					"text" : "csound -1*2*-30*440*200"
+					"patching_rect" : [ 558.0, 328.0, 155.0, 22.0 ],
+					"text" : "csound -1*2*-30*440*200*2"
 				}
 
 			}
@@ -69,8 +233,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 195.0, 144.0, 22.0 ],
-					"text" : "csound 1*-1*-30*440*200"
+					"patching_rect" : [ 398.0, 273.0, 155.0, 22.0 ],
+					"text" : "csound 1*-1*-30*440*200*2"
 				}
 
 			}
@@ -92,7 +256,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1213.0, 496.0, 640.0, 480.0 ],
+						"rect" : [ 766.0, 318.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -121,6 +285,30 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 152.0, 318.0, 159.0, 22.0 ],
+									"text" : "toDevice 3*chgScn*0*debug"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 147.0, 286.0, 159.0, 22.0 ],
+									"text" : "toDevice 3*chgScn*2*debug"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-8",
 									"maxclass" : "message",
@@ -152,7 +340,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 237.0, 120.0, 159.0, 22.0 ],
-									"text" : "toDevice 2*chgScn*1*debug"
+									"text" : "toDevice 2*chgScn*0*debug"
 								}
 
 							}
@@ -176,7 +364,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 140.0, 159.0, 22.0 ],
-									"text" : "toDevice 3*chgScn*1*debug"
+									"text" : "toDevice 3*chgScn*0*debug"
 								}
 
 							}
@@ -239,6 +427,13 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-2", 0 ]
 								}
 
@@ -275,6 +470,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"source" : [ "obj-8", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -462,7 +664,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 94.0, 275.0, 50.0, 22.0 ],
-													"text" : "2 0 0"
+													"text" : "3 0 0"
 												}
 
 											}
@@ -486,7 +688,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 388.0, 217.0, 50.0, 22.0 ],
-													"text" : "2"
+													"text" : "3"
 												}
 
 											}
@@ -776,7 +978,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 327.0, 256.0, 83.0, 22.0 ],
+					"patching_rect" : [ 203.0, 279.0, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -817,7 +1019,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 363.0, 222.0, 742.0, 546.0 ],
+						"rect" : [ 609.0, 158.0, 742.0, 546.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2111,7 +2313,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 647.0, 564.0, 715.0, 459.0 ],
+						"rect" : [ 647.0, 339.0, 715.0, 459.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5622,7 +5824,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 28.5, 279.0, 146.0, 22.0 ],
-					"text" : "\"Client gone 3\""
+					"text" : "\"Client gone 4\""
 				}
 
 			}
@@ -5695,6 +5897,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 0,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -5736,6 +5940,29 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"order" : 0,
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -5750,7 +5977,21 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -5784,6 +6025,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 1 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-8", 0 ]
 				}
@@ -5792,7 +6049,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "script.js",
-				"bootpath" : "E:/GitHub/cubeMaxAPP",
+				"bootpath" : "~/Desktop/VIENNA/cubeMaxAPP",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
